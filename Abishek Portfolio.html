@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Portfolio</title>
+
+    <style>
+        body {
+            background-color: #8ecae6; /* Light background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #023047; /* Dark blue background color */
+            padding: 25px 0 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline-block;
+            margin: 0;
+            color: white;
+            font-size: 31px;
+            vertical-align: middle;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #023047; /* Dark blue background color */
+            padding: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffb703; /* Yellow text color */
+            font-weight: bold;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fb8500; /* Orange text color on hover */
+        }
+
+        .portfolio-heading {
+            text-align: center;
+            margin: 30px 0 -10px 0;
+            color: #023047; /* Dark blue text color for headings */
+        }
+
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .project-card {
+            background-color: #fff; /* White background color for the project cards */
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: 350px; /* Increased card width */
+        }
+
+        .aboutresume {
+            background-color: white;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-title {
+            color: #023047; /* Dark blue text color for project titles */
+            font-size: 24px; /* Increased font size */
+            margin: 0;
+        }
+
+        .resumee {
+            margin: 0 75px 0 75px;
+        }
+
+        .project-description {
+            color: #777;
+            font-size: 15px;
+            line-height: 25px; /* Center-align the content in the "About Me" and "Contact Me" sections */
+        }
+        .about-description {
+            color: #777;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center; /* Center-align the content in the "About Me" and "Contact Me" sections */
+        }
+        .summary{color: #777;}
+        .contact-description {
+            color: #000000;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        #centers {
+            text-align: center;
+        }
+        .primary-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1.6rem;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .primary-button {
+            background-color: #fb8500;
+            color: #fff;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: none;
+        }
+
+        .primary-button:hover {
+            background-color: #bb6400;
+        }
+    </style>
+    <script>
+        function errormessage() {
+            alert("No projects available right now");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Abishek Renganthan K</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#projects">Projects / Workshop</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <h2 id="projects" class="portfolio-heading"> Projects / Workshop </h2>
+    <div class="portfolio-container">
+        <div class="project-card">
+            <div class="project-info">
+                <h2 class="project-title">E-Commerce Website</h2>
+                <p class="project-description">Developed a feature-rich e-commerce website using HTML, CSS, and JavaScript. Implemented user authentication, product search, and a shopping cart system.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h2 class="project-title">Portfolio Website</h2>
+                <p class="project-description">Designed and built a personal portfolio website to showcase my front-end development skills. Utilized HTML and CSS to create an interactive and responsive layout.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h2 class="project-title">Travel Blog Website</h2>
+                <p class="project-description">Created a travel blog website using HTML and CSS, featuring travel stories, photos, and a user-friendly commenting system. Optimized for mobile devices.</p>
+            </div>
+        </div>
+        
+        <a href="#projects" class="primary-button" onclick="errormessage()">Reach me out</a>
+    </div>
+    <div class="aboutresume">
+        <h2 id="about" class="portfolio-heading" style="padding-top: 30px;"> About Me</h2>
+        <p class="about-description" id="centers">I am a passionate front-end developer with a strong background in web development. <br> I love creating beautiful and interactive web experiences that engage users and leave a lasting impression.</p>
+        <h2 id="resume" class="portfolio-heading"> Resume</h2>
+        <div class="resumee">
+            <h4>Abishek Renganthan K</h4>
+            <p class="contact-info">
+            Phone: 854426576<br>
+            Email: abishekrenganathan@gmail.com
+            </p>
+            <h4>Summary :</h4>
+            <p class="summary" >Front-end developer with 1.2 years of experience in creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, I'm dedicated to crafting seamless web experiences. Let's collaborate to bring web projects to life and engage users with stunning designs.</p>
+            <b>Education : </b> BCA</p></p>
+            <p class="skills" style="padding-bottom: 30px;"><b>Skills : </b>HTML/CSS, JavaScript, Responsive Web Design, Front-End Frameworks, Version Control/Git </p>
+    </div>
+    </div>
+    <h2 id="contact" class="portfolio-heading"> Contact Me</h2>
+    <p class="contact-description" id="centers">Feel free to reach out to me for any inquiries, collaboration opportunities, or just to say hello. You can contact me at contact@example.com.</p>
+</body>
+</html>
